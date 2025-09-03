@@ -1,0 +1,51 @@
+{{template "header.html" .}}
+            <section class="about-section">
+                <h1 class="page-title">About deWeb</h1>
+                <p class="page-subtitle">Learn more about our modern web application platform</p>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>What is deWeb?</h2>
+                        <p>deWeb is a lightweight, high-performance web application built with the Go programming language and Echo web framework. It's designed to be fast, reliable, and easy to deploy.</p>
+                        
+                        <h2>Technology Stack</h2>
+                        <ul class="tech-list">
+                            <li><strong>Backend:</strong> Go (Golang) with Echo framework</li>
+                            <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript</li>
+                            <li><strong>Templates:</strong> Go HTML templates</li>
+                            <li><strong>Styling:</strong> Modern CSS with Flexbox/Grid</li>
+                        </ul>
+                        
+                        <h2>Features</h2>
+                        <div class="features-grid">
+                            <div class="feature-item">
+                                <h3>High Performance</h3>
+                                <p>Leverages Go's concurrency model for excellent performance</p>
+                            </div>
+                            <div class="feature-item">
+                                <h3>Responsive Design</h3>
+                                <p>Works seamlessly on desktop, tablet, and mobile devices</p>
+                            </div>
+                            <div class="feature-item">
+                                <h3>Easy Configuration</h3>
+                                <p>Simple environment-based configuration system</p>
+                            </div>
+                            <div class="feature-item">
+                                <h3>Modern UI</h3>
+                                <p>Clean, accessible, and user-friendly interface</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="server-info">
+                        <h3>Server Information</h3>
+                        <div class="info-card">
+                            <p><strong>Port:</strong> {{.Port}}</p>
+                            <p><strong>Status:</strong> <span class="status-online">Online</span></p>
+                            <p><strong>Framework:</strong> Echo v4</p>
+                            <p><strong>Language:</strong> Go</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+{{template "footer.html" .}}

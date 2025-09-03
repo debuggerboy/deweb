@@ -10,6 +10,7 @@
 
 # Project specific
 deweb
+deweb-data
 
 # Test binary, built with `go test -c`
 *.test
